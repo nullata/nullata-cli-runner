@@ -8,7 +8,7 @@ This is the easy way around limited functionality in some container images, wher
 To build the application, run the following command from the root directory of the project:
 
 ````
-    mvn clean package
+mvn clean package
 ````
 This will compile the source code, run the tests, and create a runnable JAR file in the target/ directory.
 
