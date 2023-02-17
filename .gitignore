@@ -30,3 +30,4 @@ target
 nbactions.xml
 nb-configuration.xml
 .idea/
+.vscode/
