@@ -1,5 +1,8 @@
-# Spring Boot CLI Web Service
+# Spring Boot CLI Runner Web Service
 This is a simple Spring Boot application that exposes a web service for running command-line scripts on the server. The service accepts a POST request with a JSON payload containing the command to run, and returns the standard output; error output and return code of the command as a JSON response.
+
+## Why does this exist?
+This is the easy way around limited functionality in some container images, where ssh and IaS tools like Anisble are not an option and you don't want to spend the time to modify the docker image or you just can't. The original intent is to use this within a full linux os distribution container and expose the ws port to a service or network within a cluster and having it run cli scripts from an attached volume.
 
 ### Building the Application
 To build the application, run the following command from the root directory of the project:
