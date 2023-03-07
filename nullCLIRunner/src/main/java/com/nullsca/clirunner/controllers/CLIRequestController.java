@@ -3,7 +3,6 @@ package com.nullsca.clirunner.controllers;
 import com.nullsca.clirunner.dtos.CommandRequest;
 import com.nullsca.clirunner.dtos.ErrorResponse;
 import com.nullsca.clirunner.services.CLIRunnerService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +14,7 @@ import java.io.IOException;
 public class CLIRequestController {
 
     private final CLIRunnerService cliRunnerService;
-    @Autowired
+
     public CLIRequestController(CLIRunnerService cliRunnerService) {
         this.cliRunnerService = cliRunnerService;
     }

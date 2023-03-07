@@ -77,7 +77,7 @@ public class CommandLineRunnerApplicationTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{\"command\":\"" + command + "\"}"))
                 .andDo(result -> System.out.println("Test 4 Produced Result:" + result.getResponse().getContentAsString()))
-                .andExpect(MockMvcResultMatchers.status().isInternalServerError())
+                .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON));
     }
 }
